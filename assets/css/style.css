@@ -57,8 +57,16 @@ h1,h2,h3,h4,h5,h6{ font-family: Poppins !important;}
   font-weight: 700;
 }
 .headingh3{
-	font-family: MarkPro-Bold;
+  font-family: MarkPro-Bold;
 	font-size: 36px;
+}
+.headingh5{
+  font-size: 16px;
+  font-weight: 600;
+}
+.headingh6{
+  font-size: 18px;
+  font-weight: 600;
 }
 p{
   font-family: MarkPro-Regular !important;
@@ -116,6 +124,24 @@ section{overflow: hidden;}
   transition: all 0.3s linear;
 }
 .btn_signup:hover {
+  background-position: right center;
+  color: #fff;
+}
+
+.btn_applynow{
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 10px;
+  box-shadow: 0px 12px 20px 0px rgba(0, 0, 29, 0.14);
+  background-image: linear-gradient(to right, rgb(250, 9, 167) 0%, rgb(250 9 167 / 50%) 51%, rgb(250, 9, 167) 100%);
+  background-size: 200% auto;
+  padding: 10px 30px;
+  font-weight: 600;
+  color: #fff;
+  display: inline-block;
+  transition: all 0.3s linear;
+}
+.btn_applynow:hover {
   background-position: right center;
   color: #fff;
 }
@@ -212,7 +238,7 @@ nav.shrink .navbar-toggler-icon{
 nav.shrink .navbar-toggler {
   padding: 4px 5px;
   margin: 8px 0;
-  background: #ffffff;
+  background: #fa09a7;
   border:none !important;
 }
 nav.shrink .navbar-brand {
@@ -389,22 +415,26 @@ nav.navbar.shrink ul li:hover a.nav-link{
 
 /*   Banner CSS  Ends */
 
-#jobs_bycategory{
+#jobs_bycategory,#Find_jobtype{
   padding: 3rem 0;
   background: #FFF1F0;
 }
-#jobs_bycategory .cat_cover{
+#jobs_bycategory .cat_cover,#Find_jobtype .cat_cover{
   position: relative;
 }
 #jobs_bycategory .cat_cover .select_job_cat{
   position: relative;
 }
-
-#jobs_bycategory .cat_cover .select_job_cat #segment_category{} 
-#jobs_bycategory .cat_cover .select_job_cat #segment_category #nav-tab{} 
+.cat_job_saved{
+  position: absolute;
+  right: 15px;
+}
+#jobs_bycategory .cat_cover .select_job_cat #segment_category #nav-tab{
+  border-bottom: 1px solid #dee2e6;
+} 
 #jobs_bycategory .cat_cover .select_job_cat #segment_category #nav-tab .nav-item{
   background: #fff1f0;
-  margin-top: 12px;
+  /* margin-top: 12px; */
 } 
 #jobs_bycategory .cat_cover .select_job_cat #segment_category #nav-tab .nav-item.active{
   background:#fff;
@@ -429,16 +459,18 @@ nav.navbar.shrink ul li:hover a.nav-link{
   text-align: center;
   border-radius: 10px 10px 0 0;
 }
-#jobs_bycategory .jobs_bycategory_inner{
+#jobs_bycategory .jobs_bycategory_inner,#Find_jobtype .jobs_bycategory_inner{
   text-align: center;
-  padding: 2rem 0;
+  padding: 3rem 0;
+  margin-bottom: 1rem;
 }
-#jobs_bycategory .jobs_bycategory_inner h2.headingh2{
+#jobs_bycategory .jobs_bycategory_inner h2.headingh2,#Find_jobtype .jobs_bycategory_inner h2.headingh2{
   text-align: center;
   font-weight: 600;
 }
-#jobs_bycategory .jobs_bycat_main_parah{
+#jobs_bycategory .jobs_bycat_main_parah,#Find_jobtype .jobs_bycat_main_parah{
   font-size: 16px;
+  font-weight: 600;
 }
 .cat_blob img.blob01{
   position: absolute;
@@ -446,7 +478,7 @@ nav.navbar.shrink ul li:hover a.nav-link{
   transform: rotate(20deg);
   width: 100%;
   max-width: 375px;
-  top: -13px;
+  top: 30px;
 }
 .cat_blob img.blob02{
   position: absolute;
@@ -510,7 +542,78 @@ nav.navbar.shrink ul li:hover a.nav-link{
     color: #555;  
 }
 
+/*   Jobs by Category  Ends  */
 
+/*   Find Job Type  Starts  */
+#Find_jobtype{
+}
+#Find_jobtype .cat_cover .find_blob img.blob01{
+  position: absolute;
+  left: -100px;
+  transform: rotate(250deg);
+  width: 100%;
+  max-width: 420px;
+  top: 10px;
+  z-index: 0;
+}
+#Find_jobtype .cat_cover .find_blob img.blob02{
+  position: absolute;
+  right: -140px;
+  transform: rotate(-230deg);
+  width: 100%;
+  max-width: 422px;
+  bottom: -70px;
+  z-index: 0;
+}
+#Find_jobtype .job_list_cover{
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+#Find_jobtype .job_list_cover .job_list_box{
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #fa09a64d;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+#Find_jobtype .job_list_cover .job_list_box:hover{
+  box-shadow: 0 12px 25px 0 rgb(245 102 196 / 61%);
+  cursor: pointer;
+}
+#Find_jobtype .job_list_cover .job_list_box .job_list_description *{
+  /* display: inline; */
+}
+#Find_jobtype .job_list_cover .job_list_box .job_list_description h6{
+  color: #FA09A7;
+  margin-right: 1rem;
+}
+.job_list_box .job_list_description .job_type,.job_list_description .job_exp,.job_list_description .job_salary{
+  font-weight: 600;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+}
+.job_list_description .btn_applynow{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  height: 94%;
+} 
+
+/*   Find Job Type  Ends */
 
 
 /*   FOOTER  Starts  */
