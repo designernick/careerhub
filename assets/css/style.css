@@ -461,6 +461,7 @@ nav.navbar.shrink ul li:hover a.nav-link{
 }
 .cat_content_cover .cat_job_box .job_description h3.job_title a{
   color: rgb(250, 9, 167);
+  transition: all 0.3s ease-in-out;
 }
 .cat_content_cover .cat_job_box .job_description h3.job_title {
   font-size: 20px;
@@ -504,6 +505,9 @@ nav.navbar.shrink ul li:hover a.nav-link{
   border: 1px solid #9a36c563;
   box-shadow: 0 15px 50px 0 rgba(26, 38, 74, .3);
   box-shadow: 0 15px 30px 0 rgb(250, 9, 167, 0.5);
+}
+.cat_content_cover .cat_job_box:hover .job_description .job_title a{
+    color: #555;  
 }
 
 
