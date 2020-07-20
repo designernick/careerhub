@@ -107,7 +107,7 @@ section{overflow: hidden;}
   font-family: 'Poppins', sans-serif;
   border-radius: 10px;
   box-shadow: 0px 12px 20px 0px rgba(0, 0, 29, 0.14);
-  background-image: linear-gradient(to right, rgb(74, 119, 244) 0%, rgb(0, 186, 222) 51%, rgb(74, 119, 244) 100%);
+  background-image: linear-gradient(to right, rgb(250, 9, 167) 0%, rgb(250 9 167 / 50%) 51%, rgb(250, 9, 167) 100%);
   background-size: 200% auto;
   padding: 12px 26px;
   font-weight: 600;
@@ -148,14 +148,17 @@ nav .nav-item{
   color:#dcacc3;
   padding-top: 4px;
 }
+nav .nav-item.nav_signup{
+  padding-top: 0;
+}
 nav .nav-item a.nav-link{
   padding: 0 0.5rem!important;
 }
 nav .nav-item a.nav-link:focus,.navbar-light .navbar-nav .nav-link:focus{
-  color: #9a36c5;
+  color: #FA09A7;
 }
 nav li.nav-item:hover{
-  color: #9a36c5;
+  color: #FA09A7;
 }
 
 ul.navbar-nav li.nav-item.nav_icon:hover a:after{
@@ -184,7 +187,7 @@ nav .nav-item:hover #navbarResponsive ul>i{
   justify-items: center ;
 }
 .navbar-light .navbar-nav a.nav-link:hover{
-	color:#9a36c5;
+	color:#FA09A7;
 	transition: all 0.3s ease-in-out;
 	font-weight: 700;
 }
@@ -221,7 +224,7 @@ nav.navbar.shrink ul a.nav-link{
   color: #363636;
 }
 nav.navbar.shrink ul li:hover a.nav-link{
-  color: #9a36c5;
+  color: #FA09A7;
 }
 
 /* styles for new MENU BTN  */
@@ -287,9 +290,23 @@ nav.navbar.shrink ul li:hover a.nav-link{
 /*   Banner CSS Starts  */
 #Banner{
   position: relative;
-    z-index: 1;
-    overflow: hidden;
-    padding-top: 90px;
+  z-index: 1;
+  overflow: hidden;
+  padding-top: 90px;
+  background-image: url(../images/header.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#Banner .banner_cover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(250 9 167 / 35%);
+  z-index: 0;
 }
 #Banner .banner_inner{
 	height: 700px;
@@ -302,6 +319,7 @@ nav.navbar.shrink ul li:hover a.nav-link{
   text-align: center;
   font-family: "Poppins", sans-serif;
   color: #fff;
+
 }
 #Banner .banner_inner p.banner_inner_parah{
   font-size: 16px;
@@ -326,7 +344,7 @@ nav.navbar.shrink ul li:hover a.nav-link{
   position: absolute;
   bottom: 0;
   right: 0;
-  padding: 17.6px 45px;
+  padding: 18px 45px;
 }
 
 #Banner .banner_inner .n_banner_btn {
@@ -334,7 +352,8 @@ nav.navbar.shrink ul li:hover a.nav-link{
   font-family: 'Poppins', sans-serif;
   border-radius: 0 8px 8px 0;
   box-shadow: 0px 20px 30px 0px rgba(0, 0, 29, 0.14) !important;
-  background-image: linear-gradient(to right, rgb(74, 119, 244) 0%, rgb(0, 186, 222) 51%, rgb(74, 119, 244) 100%);
+  /* background-image: linear-gradient(to right, rgb(74, 119, 244) 0%, rgb(0, 186, 222) 51%, rgb(74, 119, 244) 100%); */
+  background-image: linear-gradient(to right, rgb(250, 9, 167) 0%, rgb(0, 186, 222) 51%, rgb(250, 9, 167) 100%);
   background-size: 200% auto;
   padding: 18px 33px;
   font-weight: 600;
@@ -380,31 +399,46 @@ nav.navbar.shrink ul li:hover a.nav-link{
 #jobs_bycategory .cat_cover .select_job_cat{
   position: relative;
 }
-#jobs_bycategory .cat_cover .select_job_cat #jobcatTab .nav-item{
+
+#jobs_bycategory .cat_cover .select_job_cat #segment_category{} 
+#jobs_bycategory .cat_cover .select_job_cat #segment_category #nav-tab{} 
+#jobs_bycategory .cat_cover .select_job_cat #segment_category #nav-tab .nav-item{
+  background: #fff1f0;
+  margin-top: 12px;
+} 
+#jobs_bycategory .cat_cover .select_job_cat #segment_category #nav-tab .nav-item.active{
+  background:#fff;
+}
+#jobs_bycategory .cat_cover .select_job_cat #segment_category #nav-tab .nav-item.active h6{
+  font-weight: 600;
+}
+#jobs_bycategory .cat_cover .select_job_cat #segment_category #nav-tab .nav-item i{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#jobs_bycategory .cat_cover .select_job_cat #segment_category #nav-tab h6{
+  color: #fa09a7;
+  /* font-weight: 600; */
+} 
+
+#jobs_bycategory .cat_cover .select_job_cat #nav-tab .nav-item{
   text-align: center;
-  padding: 1rem 1rem 0 1rem;
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
 }
 #jobs_bycategory .cat_cover .select_job_cat #nav-tab .nav-item.nav-link{
   text-align: center;
+  border-radius: 10px 10px 0 0;
 }
 #jobs_bycategory .jobs_bycategory_inner{
   text-align: center;
   padding: 2rem 0;
 }
-#jobs_bycategory .jobs_bycategory_inner h2.heading2{
+#jobs_bycategory .jobs_bycategory_inner h2.headingh2{
   text-align: center;
   font-weight: 600;
 }
 #jobs_bycategory .jobs_bycat_main_parah{
   font-size: 16px;
-}
-.cat_blob img.blob02{
-  position: absolute;
-  right: -20px;
-  transform: rotate(100deg);
-  width: 100%;
-  max-width: 375px;
-  bottom: 0px;
 }
 .cat_blob img.blob01{
   position: absolute;
@@ -414,8 +448,19 @@ nav.navbar.shrink ul li:hover a.nav-link{
   max-width: 375px;
   top: -13px;
 }
+.cat_blob img.blob02{
+  position: absolute;
+  right: -120px;
+  transform: rotate(-200deg);
+  width: 100%;
+  max-width: 422px;
+  bottom: 0px;
+}
 .cat_content_cover{
   padding: 2rem 0;
+}
+.cat_content_cover .cat_job_box .job_description h3.job_title a{
+  color: rgb(250, 9, 167);
 }
 .cat_content_cover .cat_job_box .job_description h3.job_title {
   font-size: 20px;
@@ -435,7 +480,7 @@ nav.navbar.shrink ul li:hover a.nav-link{
 }
 
 .cat_content_cover .job_description span.job_tech_tags{
-  border: 1px solid #007bff;
+  border: 1px solid #FA09A7;  /* rgb(250, 9, 167) */
   border-radius: 4px;
   margin: 0px 0px 5px 0;
   font-size: 12px;
@@ -458,7 +503,7 @@ nav.navbar.shrink ul li:hover a.nav-link{
   cursor: pointer;
   border: 1px solid #9a36c563;
   box-shadow: 0 15px 50px 0 rgba(26, 38, 74, .3);
-  box-shadow: 0 15px 30px 0 rgba(59, 104, 240, 0.5);
+  box-shadow: 0 15px 30px 0 rgb(250, 9, 167, 0.5);
 }
 
 
