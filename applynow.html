@@ -103,7 +103,8 @@
 
                                             <li class="active" id="personal"><strong><i class="fas fa-user"></i> Personal</strong></li>
                                             <li id="education"><strong><i class="fas fa-graduation-cap"></i> Education</strong></li>
-                                            <li id="experience"><strong><i class="fas fa-briefcase"></i> Experience</strong></li>
+                                            <li id="experience"><strong><i class="fas fa-graduation-cap"></i> Experience</strong></li>
+                                            <li id="other"><strong><i class="fas fa-briefcase"></i> Other</strong></li>
                                             <li id="confirm"><strong>Finish</strong></li>
                                         </ul>
                                         <!-- fieldsets -->
@@ -146,7 +147,7 @@
                                                 <div class="form-group">
                                                     <div class="row p-0 m-0">
                                                         <div class="col-7 p-0 m-0">
-                                                            <label class="positionapply main_label">Position you applying for!</label>
+                                                            <label class="positionapply main_label"> <span>1.</span> Position you applying for!</label>
                                                             <select class="list-dt" id="month" name="expmonth">
                                                             <option selected>Select</option>
                                                             <option>Administrative Assistant</option>
@@ -182,7 +183,7 @@
                                                         </select>
                                                         </div>
                                                         <div class="col-5">
-                                                            <label class="Exphave main_label">Experience you have?</label>
+                                                            <label class="Exphave main_label"><span>2.</span>Experience you have?</label>
                                                             <select class="list-dt" id="month" name="expmonth">
                                                             <option selected>Select</option>
                                                             <option>None</option>
@@ -202,7 +203,7 @@
 
                                                 <div class="form-group">
                                                     <label class="form-check-label mr-1 main_label" for="invalidCheck2">
-                                                        Are you currently Employed?
+                                                        <span>3.</span>  Are you currently Employed?
                                                     </label>
                                                     <div class="custom-control custom-radio custom-control-inline">
 
@@ -217,7 +218,7 @@
 
                                                 <div class="form-group">
                                                     <label class="form-check-label mr-1 main_label" for="invalidCheck3">
-                                                        Type of employment are you interested in?
+                                                        <span>4.</span> Type of employment are you interested in?
                                                     </label>
                                                     <div class="col-12 pt-1">
                                                         <div class="custom-control custom-radio custom-control-inline">
@@ -239,7 +240,7 @@
                                                 <div class="form-group">
 
                                                     <label class="form-check-label mr-1 main_label" for="invalidCheck4">
-                                                        How long do you intend to work with Certifyd?
+                                                        <span>5.</span> How long do you intend to work with Certifyd?
                                                     </label>
 
                                                     <div class="col-12 pt-1">
@@ -266,7 +267,7 @@
 
                                                 <div class="form-group">
                                                     <label class="form-check-label mr-1" for="invalidCheck5">
-                                                        What is your current US Status?
+                                                        <span>6.</span> What is your current US Status?
                                                     </label>
                                                     <div class="col-12 pt-1">
                                                         <div class="custom-control custom-radio custom-control-inline">
@@ -302,7 +303,7 @@
 
                                                 <div class="form-group">
                                                     <label class="form-check-label mr-1" for="invalidCheck6">
-                                                        Please select all the languages that you can speak fluently and understand clearly.
+                                                        <span>7.</span>  Please select all the languages that you can speak fluently and understand clearly.
                                                     </label>
                                                     <div class="col-12 pt-1">
                                                         <div class="custom-control custom-checkbox custom-control-inline">
@@ -377,10 +378,10 @@
                                                 </div>
 
 
-                                                <label for="job_description">Job Description</label>
+                                                <label for="job_description" class="main_label">Job Description</label>
                                                 <textarea type="text" id="job_description" name="jobdescription" rows="1"></textarea>
 
-                                                <label for="job_leavingReason">Reason for Leaving</label>
+                                                <label for="job_leavingReason" class="main_label">Reason for Leaving</label>
                                                 <textarea type="text" id="job_leavingReason" name="jobdescription" rows="1"></textarea>
 
                                                 <button name="addfieldset" class="btn_addfieldset">Add More</button>
@@ -388,7 +389,255 @@
 
 
                                             <input type="button" name="previous" class="previous btn_applynow btn_previous" value="Previous" />
-                                            <input type="button" name="make_payment" class="next btn_applynow btn_next" value="Confirm" />
+                                            <input type="button" name="next" class="next btn_applynow btn_next" value="Next Step" />
+
+                                        </fieldset>
+                                        <fieldset>
+                                            <div class="form-card">
+                                                <h2 class="fs-title pb-2">Medical History</h2>
+
+
+                                                <!-- <div class="form-group">
+                                                    <div class="row p-0 m-0">
+                                                        <div class="col-7 p-0 m-0">
+                                                            <label class="positionapply main_label">Position you applying for!</label>
+                                                            <select class="list-dt" id="month" name="expmonth">
+                                                            <option selected>Select</option>
+                                                            <option>Administrative Assistant</option>
+                                                            <option>Social Media Manager</option>
+                                                            <option>Full Stack Developer</option>
+                                                            <option>Mean Stack Developer</option>
+                                                            <option>Front End Developer</option>
+                                                            <option>Back End Developer</option>
+                                                            <option>Risk Management Agent</option>
+                                                            <option>Accountant</option>
+                                                            <option>Data Entry Clerk</option>
+                                                            <option>Digital Marketing</option>
+                                                            <option>Customer Care</option>
+                                                            <option>General Manager</option>
+                                                            <option>Payroll Clerk</option>
+                                                            <option>Sales Agent</option>
+                                                            <option>UI/UX Designer</option>
+                                                            <option>Project Manager</option>
+                                                            <option>Office Manager</option>
+                                                            <option>HR Manager</option>
+                                                            <option>Web Developer</option>
+                                                            <option>Marketing Director</option>
+                                                            <option>Compliance Agent</option>
+                                                            <option>Android Developer</option>
+                                                            <option>Software Engineer</option>
+                                                            <option>Graphics Designer</option>
+                                                            <option>Dispatcher</option>
+                                                            <option>IOS Developer</option>
+                                                            <option>Content Writer</option>
+                                                            <option>Animator</option>
+                                                            <option>QA Tester</option>
+                                                            <option>Other</option>
+                                                        </select>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <label class="Exphave main_label">Experience you have?</label>
+                                                            <select class="list-dt" id="month" name="expmonth">
+                                                            <option selected>Select</option>
+                                                            <option>None</option>
+                                                            <option>3-10 Months</option>
+                                                            <option>1-3 Years</option>
+                                                            <option>4-6 Years</option>
+                                                            <option>7-10 Years</option>
+                                                            <option>10-20 Years</option>
+                                                            <option>20-24 Years</option>
+                                                            <option>25+ Years</option>
+                                                           
+                                                        </select>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+
+
+                                                <div class="form-group">
+                                                    <label class="form-check-label mr-1 main_label" for="invalidCheck01">
+                                                        Have you had any major surgeries in the past three years?
+                                                    </label>
+                                                    <div class="col-12 pt-1">
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="pastMajorSurgYes" name="pastMajorSurgery" class="custom-control-input">
+                                                            <label class="custom-control-label" for="pastMajorSurgYes">Yes</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="pastMajorSurgNo" name="pastMajorSurgery" class="custom-control-input">
+                                                            <label class="custom-control-label" for="pastMajorSurgNo">No</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="form-check-label mr-1 main_label" for="invalidCheck02">
+                                                        Do you have any current Injuries that will prevent you from working effectively?
+                                                    </label>
+                                                    <div class="col-12 pt-1">
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="currentInjYes" name="currentInjury" class="custom-control-input">
+                                                            <label class="custom-control-label" for="currentInjYes">Yes</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="currentInjNo" name="currentInjury" class="custom-control-input">
+                                                            <label class="custom-control-label" for="currentInjNo">No</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="form-group">
+
+                                                    <label class="form-check-label mr-1 main_label" for="invalidCheck03">
+                                                        Do you have any Disabilities?
+                                                    </label>
+
+                                                    <div class="col-12 pt-1">
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="DisabilityYes" name="DisabilityOption" class="custom-control-input">
+                                                            <label class="custom-control-label" for="DisabilityYes">Yes</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="DisabilityNo" name="DisabilityOption" class="custom-control-input">
+                                                            <label class="custom-control-label" for="DisabilityNo">No</label>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="form-check-label mr-1" for="invalidCheck04">
+                                                        Do you have any of the following conditions? (Please select all that applies)
+                                                    </label>
+                                                    <div class="col-12 pt-1">
+                                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                                            <input type="checkbox" id="disease1" name="diseaseSelect" class="custom-control-input">
+                                                            <label class="custom-control-label" for="disease1">Asthma</label>
+                                                        </div>
+                                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                                            <input type="checkbox" id="disease2" name="diseaseSelect" class="custom-control-input">
+                                                            <label class="custom-control-label" for="disease2">Diabetes</label>
+                                                        </div>
+
+                                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                                            <input type="checkbox" id="disease3" name="diseaseSelect" class="custom-control-input">
+                                                            <label class="custom-control-label" for="disease3">Sickle Cell</label>
+                                                        </div>
+
+                                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                                            <input type="checkbox" id="disease4" name="diseaseSelect" class="custom-control-input">
+                                                            <label class="custom-control-label" for="disease4">Sarcoidosis</label>
+                                                        </div>
+
+                                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                                            <input type="checkbox" id="disease5" name="diseaseSelect" class="custom-control-input">
+                                                            <label class="custom-control-label" for="disease5">Arthritis</label>
+                                                        </div>
+
+                                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                                            <input type="checkbox" id="disease6" name="diseaseSelect" class="custom-control-input">
+                                                            <label class="custom-control-label" for="disease6">Heart Disease</label>
+                                                        </div>
+
+                                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                                            <input type="checkbox" id="disease7" name="diseaseSelect" class="custom-control-input">
+                                                            <label class="custom-control-label" for="disease7">Tuberculosis</label>
+                                                        </div>
+
+                                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                                            <input type="checkbox" id="disease8" name="diseaseSelect" class="custom-control-input">
+                                                            <label class="custom-control-label" for="disease8">Glaucoma</label>
+                                                        </div>
+
+                                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                                            <input type="checkbox" id="disease9" name="diseaseSelect" class="custom-control-input">
+                                                            <label class="custom-control-label" for="disease9"> Allergies</label>
+                                                        </div>
+
+                                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                                            <input type="checkbox" id="disease10" name="diseaseSelect" class="custom-control-input">
+                                                            <label class="custom-control-label" for="disease10"> Migraines</label>
+                                                        </div>
+
+                                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                                            <input type="checkbox" id="disease11" name="diseaseSelect" class="custom-control-input">
+                                                            <label class="custom-control-label" for="disease11"> STDs/HIV</label>
+                                                        </div>
+
+                                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                                            <input type="checkbox" id="disease12" name="diseaseSelect" class="custom-control-input">
+                                                            <label class="custom-control-label" for="disease12"> TTP</label>
+                                                        </div>
+
+                                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                                            <input type="checkbox" id="disease13" name="diseaseSelect" class="custom-control-input">
+                                                            <label class="custom-control-label" for="disease13"> Anemia</label>
+                                                        </div>
+
+                                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                                            <input type="checkbox" id="disease14" name="diseaseSelect" class="custom-control-input">
+                                                            <label class="custom-control-label" for="disease14"> Epilepsy</label>
+                                                        </div>
+
+                                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                                            <input type="checkbox" id="disease15" name="diseaseSelect" class="custom-control-input">
+                                                            <label class="custom-control-label" for="disease15"> Sinus</label>
+                                                        </div>
+
+                                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                                            <input type="checkbox" id="disease16" name="diseaseSelect" class="custom-control-input">
+                                                            <label class="custom-control-label" for="disease16"> Hepatitis</label>
+                                                        </div>
+
+                                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                                            <input type="checkbox" id="disease17" name="diseaseSelect" class="custom-control-input">
+                                                            <label class="custom-control-label" for="disease17"> Autism</label>
+                                                        </div>
+
+                                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                                            <input type="checkbox" id="disease18" name="diseaseSelect" class="custom-control-input">
+                                                            <label class="custom-control-label" for="disease18"> Cancer</label>
+                                                        </div>
+
+                                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                                            <input type="checkbox" id="disease19" name="diseaseSelect" class="custom-control-input">
+                                                            <label class="custom-control-label" for="disease19"> Seizures</label>
+                                                        </div>
+
+                                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                                            <input type="checkbox" id="disease20" name="diseaseSelect" class="custom-control-input">
+                                                            <label class="custom-control-label" for="disease20"> Lupus</label>
+                                                        </div>
+
+                                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                                            <input type="checkbox" id="disease21" name="diseaseSelect" class="custom-control-input">
+                                                            <label class="custom-control-label" for="disease21"> Malaria</label>
+                                                        </div>
+
+                                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                                            <input type="checkbox" id="disease22" name="diseaseSelect" class="custom-control-input">
+                                                            <label class="custom-control-label" for="disease22"> Endometriosis</label>
+                                                        </div>
+
+                                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                                            <input type="checkbox" id="disease23" name="diseaseSelect" class="custom-control-input">
+                                                            <label class="custom-control-label" for="disease23"> Hypertension</label>
+                                                        </div>
+
+                                                        <div class="custom-control custom-checkbox custom-control-inline">
+                                                            <input type="checkbox" id="disease24" name="diseaseSelect" class="custom-control-input">
+                                                            <label class="custom-control-label" for="disease24"> Sleep Apnea</label>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+
+                                                <button name="addfieldset" class="btn_addfieldset">Add More</button>
+                                            </div>
+                                            <input type="button" name="previous" class="previous btn_applynow btn_previous" value="Previous" />
+                                            <input type="button" name="Confirm_submit" class="next btn_applynow btn_next" value="Confirm" />
 
                                         </fieldset>
                                         <fieldset>
