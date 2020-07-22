@@ -1095,7 +1095,8 @@ nav.navbar.shrink ul li:hover a.nav-link {
     margin-bottom: 16px;
     position: relative;
     border: 1.6px dashed #fa09a785;
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .12);
+    /* box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .12); */
+    box-shadow: 0 12px 25px 0 rgb(245 102 196 / 61%);
     transition: all 0.2s ease-in-out;
 }
 
@@ -1453,6 +1454,11 @@ select.list-dt:focus {
     max-width: 165px;
 }
 
+#msform .form-card .certifyParah {
+    color: #787878;
+    margin-bottom: 3rem;
+}
+
 .radio-group {
     position: relative;
     margin-bottom: 25px
@@ -1522,6 +1528,9 @@ select.list-dt:focus {
     }
     .row_bottom div .copyright {
         margin-left: 0;
+    }
+    #msform fieldset .form-card {
+        width: 95%;
     }
 }
 
