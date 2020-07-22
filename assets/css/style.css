@@ -1444,6 +1444,15 @@ select.list-dt:focus {
     background: #f575c9
 }
 
+#msform .form-card .custom-control.custom-checkbox.custom-control-inline {
+    width: 100%;
+    max-width: 145px;
+}
+
+#msform .form-card .inline_adjust .custom-control.custom-checkbox.custom-control-inline {
+    max-width: 165px;
+}
+
 .radio-group {
     position: relative;
     margin-bottom: 25px
